@@ -32,10 +32,11 @@ az role assignment create \
   --role AcrPush
 ```
   
-In GitHub UI go to your repository and then **Security > Secrets and variables > Actions > New repository secret**
+In GitHub UI go to your repository and then **Security > Secrets and variables > Actions**.  
+By clicking on **New repository secret** create secret for each of these below:
 | Secret        | Value           |
 | ------------- |:------------- |
-|AZURE_CREDENTIALS     | The entire `JSON output` from the service principal creation step |
+| AZURE_CREDENTIALS     | The entire `JSON output` from the service principal creation step |
 | REGISTRY_LOGIN_SERVER      | The login server name of your registry (all lowercase). Example: *myregistry.azurecr.io*      |
 | REGISTRY_USERNAME | The `clientId` from the JSON output from the service principal creation      |
 | REGISTRY_PASSWORD | The `clientSecret` from the JSON output from the service principal creation     |
