@@ -32,8 +32,10 @@ az role assignment create \
   --role AcrPush
 ```
   
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Secret        | Value           |
+| ------------- |:-------------:|
+|AZURE_CREDENTIALS     | The entire JSON output from the service principal creation step |
+| REGISTRY_LOGIN_SERVER      | The login server name of your registry (all lowercase). Example: myregistry.azurecr.io      |
+| REGISTRY_USERNAME | The clientId from the JSON output from the service principal creation      |
+| REGISTRY_PASSWORD | The clientSecret from the JSON output from the service principal creation     |
+| RESOURCE_GROUP | 	The name of the resource group you used to scope the service principal      |
