@@ -33,7 +33,7 @@ az role assignment create \
 ```
   
 | Secret        | Value           |
-| ------------- |:-------------:|
+| ------------- |:------------- |
 |AZURE_CREDENTIALS     | The entire JSON output from the service principal creation step |
 | REGISTRY_LOGIN_SERVER      | The login server name of your registry (all lowercase). Example: myregistry.azurecr.io      |
 | REGISTRY_USERNAME | The clientId from the JSON output from the service principal creation      |
