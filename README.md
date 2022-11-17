@@ -32,6 +32,7 @@ az role assignment create \
   --role AcrPush
 ```
   
+In GitHub UI go to your repository and then **Security > Secrets and variables > Actions > New repository secret**
 | Secret        | Value           |
 | ------------- |:------------- |
 |AZURE_CREDENTIALS     | The entire `JSON output` from the service principal creation step |
@@ -39,3 +40,5 @@ az role assignment create \
 | REGISTRY_USERNAME | The `clientId` from the JSON output from the service principal creation      |
 | REGISTRY_PASSWORD | The `clientSecret` from the JSON output from the service principal creation     |
 | RESOURCE_GROUP | 	The name of the resource group you used to scope the service principal      |
+
+
