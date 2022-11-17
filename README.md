@@ -43,3 +43,7 @@ By clicking on **New repository secret** create secret for each of these below:
 | RESOURCE_GROUP | 	The name of the resource group you used to scope the service principal      |
 
 
+  
+  
+  Plan for Future:
+  Add terragrunt and use variables for backend configuration.
